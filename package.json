@@ -1,0 +1,21 @@
+{
+  "name": "mobilesuperhero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^2.0.1",
+    "express": "^4.16.3",
+    "joi": "^13.6.0",
+    "joi-objectid": "^2.0.0",
+    "jsonwebtoken": "^8.3.0",
+    "mongoose": "^5.2.15",
+    "nodemon": "^1.18.4",
+    "winston": "^3.1.0"
+  }
+}
