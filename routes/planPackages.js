@@ -23,7 +23,7 @@ router.post('/', async (req, res)=> {
 
     let planpackage = new PlanPackage({
         name: req.body.name,
-        value: re.body.value,
+        value: req.body.value,
         navigation: req.body.navigation,
         navigationDescription: req.body.navigationDescription,
         minutes: req.body.minutes

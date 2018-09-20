@@ -23,7 +23,7 @@ router.post('/', async (req, res)=> {
 
     let customer = new Customer({
         name: req.body.name,
-        phoneFlash: re.body.phoneFlash,
+        phoneFlash: req.body.phoneFlash,
         phonePortability: req.body.phonePortability,
         stateActivation: req.body.stateActivation,
         portability: req.body.portability
@@ -41,7 +41,7 @@ router.put('/:id',[validateObjectId], async(req, res) => {
     const customer = await Customer.findOneAndUpdate(req.params.id,
     {
         name: req.body.name,
-        phoneFlash: re.body.phoneFlash,
+        phoneFlash: req.body.phoneFlash,
         phonePortability: req.body.phonePortability,
         stateActivation: req.body.stateActivation,
         portability: req.body.portability
