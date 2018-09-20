@@ -6,18 +6,21 @@ const Customer = mongoose.model('Customer', new mongoose.Schema({
         type: String,
         required: true,
         minlength: 5,
-        maxlength: 255
+        maxlength: 255,
+        trim: true
     },
     phoneFlash:{
         type: String,
         required: true,
         minlength: 1,
-        maxlength: 10
+        maxlength: 10,
+        trim: true
     },
     phonePortability: {
         type: String,        
         minlength: 1,
-        maxlength: 10
+        maxlength: 10,
+        trim: true
     },
     stateActivation: {
         type: Boolean,
